@@ -1,23 +1,35 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-Version := "Beta 0.60"
+Version := "Beta 0.62"
 
-Msgbox, Currently Running Version %Version%,
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
 Sleep, 250
 If Check = 1
 {
+        Msgbox, Currently Running Version %Version%
         Exit
 }
 Else if Check = 2
 {
         ;stoped
         MsgBox, The script has stopped running
-        Msgbox, 4, , do you want to exit?
+        Msgbox, 4, , Do you want to exit?
         IfMsgBox, Yes
         {
+                FileReadLine, UsernameX, %A_ScriptDir%\Typing-Config.txt, 2
+                FileReadLine, UsernameY, %A_ScriptDir%\Typing-Config.txt, 3
+                FileReadLine, typingLessonsX, %A_ScriptDir%\Typing-Config.txt, 4
+                FileReadLine, typingLessonsY, %A_ScriptDir%\Typing-Config.txt, 5
+                FileReadLine, nextArrowX, %A_ScriptDir%\Typing-Config.txt, 6
+                FileReadLine, nextArrowY, %A_ScriptDir%\Typing-Config.txt, 7
+                FileReadLine, backArrowX, %A_ScriptDir%\Typing-Config.txt, 8
+                FileReadLine, backArrowY, %A_ScriptDir%\Typing-Config.txt, 9
+                FileReadLine, typingBoxX, %A_ScriptDir%\Typing-Config.txt, 10
+                FileReadLine, typingBoxY, %A_ScriptDir%\Typing-Config.txt, 11
+                FileDelete, %A_ScriptDir%\Typing-Config.txt
+                FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%, %A_ScriptDir%\Typing-Config.txt
                 ExitApp, 
         }
         IfMsgBox, No
@@ -39,6 +51,7 @@ Else if Check = 2
 }
 Else {
         ;setup
+        Msgbox, Currently Running Version %Version%
         FileDelete, %A_ScriptDir%\Typing-Config.txt
         Msgbox, Welcome to Ur Typing Tutor CHEAT!
         Msgbox, 3, First Time Setup, Do u want to run the First time Setup
@@ -173,7 +186,7 @@ hk(f=0, mouse=0) {
 
 ; Keybinds
 
-!r::
+!k::
 Reload
 Return
 
@@ -181,7 +194,7 @@ Return
 Goto, Loop
 Return
 
-!k::
+!r::
 Goto, Close
 Return
 
@@ -237,41 +250,42 @@ Loop, {
                 Sleep, 500
                 MouseClick, left, %nextArrowX%, %nextArrowY%, 1, 0
         }
-       SetCapsLockState, off 
-       Sleep, 1750
-       MouseMove, %typingBoxX%, %typingBoxY%, 0
-       Sleep, 1750
-       MouseClick, left, %typingBoxX%, %typingBoxY%, 1, 0 
-       Send, %TextP01%
-       Sleep, 1750
-       Send, %TextP02%
-       Sleep, 1750
-       Send, %TextP03%
-       Sleep, 1750
-       Send, %TextP04% 
-       Sleep, 1750
-       Send, %TextP05%
-       Sleep, 1750
-       Send, %TextP06%
-       Sleep, 1750
-       Send, %TextP07%
-       Sleep, 1750
-       Send, %TextP08%
-       Sleep, 1750
-       Send, %TextP09%
-       Sleep, 1750
-       Send, %TextP10%
-       Sleep, 1750
-       Send, %TextP11%
-       Sleep, 1750
-       Send, %TextP12%
-       Sleep, 1750
-       Send, %TextP13%
-       Sleep, 1750
-       Send, %TextP14%
-       Sleep, 350
-       Send, %TextP15%
-       Sleep, 1750
+        hk(1,1)  
+        SetCapsLockState, off 
+        Sleep, 1750
+        MouseMove, %typingBoxX%, %typingBoxY%, 0
+        Sleep, 1750
+        MouseClick, left, %typingBoxX%, %typingBoxY%, 1, 0 
+        Send, %TextP01%
+        Sleep, 1750
+        Send, %TextP02%
+        Sleep, 1750
+        Send, %TextP03%
+        Sleep, 1750
+        Send, %TextP04% 
+        Sleep, 1750
+        Send, %TextP05%
+        Sleep, 1750
+        Send, %TextP06%
+        Sleep, 1750
+        Send, %TextP07%
+        Sleep, 1750
+        Send, %TextP08%
+        Sleep, 1750
+        Send, %TextP09%
+        Sleep, 1750
+        Send, %TextP10%
+        Sleep, 1750
+        Send, %TextP11%
+        Sleep, 1750
+        Send, %TextP12%
+        Sleep, 1750
+        Send, %TextP13%
+        Sleep, 1750
+        Send, %TextP14%
+        Sleep, 350
+        Send, %TextP15%
+        Sleep, 1750
         Loop, 21,
         {
                 MouseMove, %backArrowX%, %backArrowY%, 0
