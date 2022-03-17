@@ -1,6 +1,7 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
+; Version 0.58
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
 Sleep, 250
