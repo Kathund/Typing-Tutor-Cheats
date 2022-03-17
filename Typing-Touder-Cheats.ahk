@@ -1,7 +1,11 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-; Version 0.58
+Version := 0.59
+
+ToolTip, Currently Running Version %Version%,
+Sleep, 2250
+ToolTip,
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
 Sleep, 250
