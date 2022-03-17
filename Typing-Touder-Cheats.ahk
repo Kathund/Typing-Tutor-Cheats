@@ -1,11 +1,9 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-Version := "Beta 0.59"
+Version := "Beta 0.60"
 
-ToolTip, Currently Running Version %Version%,
-Sleep, 2250
-ToolTip,
+Msgbox, Currently Running Version %Version%,
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
 Sleep, 250
