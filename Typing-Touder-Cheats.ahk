@@ -1,7 +1,8 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-Version := "Beta 0.62"
+#NoTrayIcon
+Version := "Beta 0.63"
 
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
