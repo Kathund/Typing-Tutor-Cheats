@@ -1,7 +1,7 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-Version := 0.59
+Version := "Beta 0.59"
 
 ToolTip, Currently Running Version %Version%,
 Sleep, 2250
