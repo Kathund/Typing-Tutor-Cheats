@@ -1,3 +1,4 @@
+#Warn All
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
@@ -193,11 +194,9 @@ Return
 
 !q::
 Goto, Loop
-Return
 
 !r::
 Goto, Close
-Return
 
 ; Loop
 Loop:
