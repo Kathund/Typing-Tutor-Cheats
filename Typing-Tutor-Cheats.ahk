@@ -3,7 +3,7 @@
 #MaxHotkeysPerInterval, 999999
 #NoEnv
 #NoTrayIcon
-Version := "Beta 0.63"
+Version := "Beta 0.64"
 
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
