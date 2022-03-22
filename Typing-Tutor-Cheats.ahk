@@ -3,7 +3,7 @@
 #MaxHotkeysPerInterval, 999999
 #NoEnv
 #NoTrayIcon
-Version := "Beta 0.64"
+Version := "Beta 0.65"
 
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
@@ -188,15 +188,17 @@ hk(f=0, mouse=0) {
 
 ; Keybinds
 
-!k::
+^+q::
+Goto, Loop
+Return
+
+^+w::
 Reload
 Return
 
-!q::
-Goto, Loop
-
-!r::
+^+e::
 Goto, Close
+Return
 
 ; Loop
 Loop:
