@@ -2,8 +2,8 @@
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-Version := "Beta 0.66"
-
+Version := "Beta 0.67"
+UrlDownloadToFile, https://github.com/Kathund/Typing-Tutor-Cheats/releases/download/v0.63-beta/Typing-Text.txt, %A_ScriptDir%\Typing-Text.txt
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
 Sleep, 250
@@ -142,8 +142,8 @@ Else {
                         }
                         Msgbox, Finished Setup
                         Msgbox, One last thing
-                        Msgbox, CTRL+SHIFT+Q will start the script
-                        MsgBox, CTRL+SHIFT+W will close the script
+                        Msgbox, ALT+Q will start the script
+                        MsgBox, ALT+W will close the script
                         FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%, %A_ScriptDir%\Typing-Config.txt
                 IfMsgBox, Cancel 
                         Reload
@@ -190,11 +190,11 @@ hk(f=0, mouse=0) {
 
 ; Keybinds
 
-^+q::
+!q::
 Goto, Loop
 Return
 
-^+w::
+!w::
 Goto, Close
 Return
 
