@@ -1,8 +1,7 @@
-#Warn All
+
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
-#NoTrayIcon
 Version := "Beta 0.66"
 
 
