@@ -3,7 +3,7 @@
 #MaxHotkeysPerInterval, 999999
 #NoEnv
 #NoTrayIcon
-Version := "Beta 0.65"
+Version := "Beta 0.66"
 
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
@@ -142,6 +142,9 @@ Else {
                                 Sleep, 25
                         }
                         Msgbox, Finished Setup
+                        Msgbox, One last thing
+                        Msgbox, CTRL+SHIFT+Q will start the script
+                        MsgBox, CTRL+SHIFT+W will close the script
                         FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%, %A_ScriptDir%\Typing-Config.txt
                 IfMsgBox, Cancel 
                         Reload
@@ -193,10 +196,6 @@ Goto, Loop
 Return
 
 ^+w::
-Reload
-Return
-
-^+e::
 Goto, Close
 Return
 
