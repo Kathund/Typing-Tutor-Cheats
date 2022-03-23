@@ -3,6 +3,8 @@
 #MaxHotkeysPerInterval, 999999
 #NoEnv
 Version := "Beta 0.67"
+FileDelete, %A_ScriptDir%\Typing-Text.txt
+Sleep, 250  
 UrlDownloadToFile, https://github.com/Kathund/Typing-Tutor-Cheats/releases/download/v0.63-beta/Typing-Text.txt, %A_ScriptDir%\Typing-Text.txt
 
 FileReadLine, Check, %A_ScriptDir%\Typing-Config.txt, 1
