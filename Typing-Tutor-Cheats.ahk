@@ -279,29 +279,41 @@ Loop, 1 {
         pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP05%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP06%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP07%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP08%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP09%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP10%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP11%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP12%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP13%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP14%
+        pageNumber := pageNumber+1
         Sleep, 350
         Send, %TextP15%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Loop, 21,
         {
+                pageNumber := pageNumber-1
                 MouseMove, %backArrowX%, %backArrowY%, 0
                 Sleep, 500
                 MouseClick, left,%backArrowX%, %backArrowY%, 1, 0
