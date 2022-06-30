@@ -252,7 +252,7 @@ Sleep, 50
 MouseMove, typingLessonsX, typingLessonsY, 0
 Sleep, 50
 MouseClick, Left, typingLessonsX, typingLessonsY, 1, 0
-Loop, {
+Loop, 1 {
         Loop, 6,
         {
                 MouseMove, %nextArrowX%, %nextArrowY%, 0
