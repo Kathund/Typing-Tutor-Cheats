@@ -255,6 +255,7 @@ MouseClick, Left, typingLessonsX, typingLessonsY, 1, 0
 Loop, 1 {
         Loop, 6,
         {
+                pageNumber := pageNumber+1
                 MouseMove, %nextArrowX%, %nextArrowY%, 0
                 Sleep, 500
                 MouseClick, left, %nextArrowX%, %nextArrowY%, 1, 0
