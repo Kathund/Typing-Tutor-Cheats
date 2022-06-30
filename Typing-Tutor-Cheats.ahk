@@ -37,18 +37,19 @@ Else if Check = 2
         }
         IfMsgBox, No
         {
-                FileReadLine, UsernameX, %A_ScriptDir%\Typing-Config.txt, 2
-                FileReadLine, UsernameY, %A_ScriptDir%\Typing-Config.txt, 3
-                FileReadLine, typingLessonsX, %A_ScriptDir%\Typing-Config.txt, 4
-                FileReadLine, typingLessonsY, %A_ScriptDir%\Typing-Config.txt, 5
-                FileReadLine, nextArrowX, %A_ScriptDir%\Typing-Config.txt, 6
-                FileReadLine, nextArrowY, %A_ScriptDir%\Typing-Config.txt, 7
-                FileReadLine, backArrowX, %A_ScriptDir%\Typing-Config.txt, 8
-                FileReadLine, backArrowY, %A_ScriptDir%\Typing-Config.txt, 9
-                FileReadLine, typingBoxX, %A_ScriptDir%\Typing-Config.txt, 10
-                FileReadLine, typingBoxY, %A_ScriptDir%\Typing-Config.txt, 11
-                FileDelete, %A_ScriptDir%\Typing-Config.txt
-                FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%, %A_ScriptDir%\Typing-Config.txt
+                FileReadLine, UsernameX, %A_ScriptDir%\Typing-Config.cfg, 2
+                FileReadLine, UsernameY, %A_ScriptDir%\Typing-Config.cfg, 3
+                FileReadLine, typingLessonsX, %A_ScriptDir%\Typing-Config.cfg, 4
+                FileReadLine, typingLessonsY, %A_ScriptDir%\Typing-Config.cfg, 5
+                FileReadLine, nextArrowX, %A_ScriptDir%\Typing-Config.cfg, 6
+                FileReadLine, nextArrowY, %A_ScriptDir%\Typing-Config.cfg, 7
+                FileReadLine, backArrowX, %A_ScriptDir%\Typing-Config.cfg, 8
+                FileReadLine, backArrowY, %A_ScriptDir%\Typing-Config.cfg, 9
+                FileReadLine, typingBoxX, %A_ScriptDir%\Typing-Config.cfg, 10
+                FileReadLine, typingBoxY, %A_ScriptDir%\Typing-Config.cfg, 11
+                FileReadLine, pageNumber, %A_ScriptDir%\Typing-Config.cfg, 12
+                FileDelete, %A_ScriptDir%\Typing-Config.cfg
+                FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%`n%pageNumber%, %A_ScriptDir%\Typing-Config.cfg
                 Reload
         }
 }
