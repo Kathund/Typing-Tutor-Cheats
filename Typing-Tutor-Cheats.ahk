@@ -1,4 +1,3 @@
-
 #SingleInstance, force
 #MaxHotkeysPerInterval, 999999
 #NoEnv
