@@ -2,6 +2,11 @@
 #MaxHotkeysPerInterval, 999999
 #NoEnv
 
+Version := "Beta 0.68"
+FileDelete, %A_ScriptDir%\Typing-Text.txt
+Sleep, 250
+FileReadLine, Check, %A_ScriptDir%\Typing-Config.cfg, 1
+FileReadLine, pageNumber, %A_ScriptDir%\Typing-Config.cfg, 12
 Sleep, 250
 If Check = 1
 {
