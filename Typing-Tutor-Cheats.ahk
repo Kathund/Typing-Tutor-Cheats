@@ -275,7 +275,8 @@ Loop, 1 {
         Send, %TextP03%
         pageNumber := pageNumber+1
         Sleep, 1750
-        Send, %TextP04% 
+        Send, %TextP04%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP05%
         Sleep, 1750
