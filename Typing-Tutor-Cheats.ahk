@@ -148,7 +148,7 @@ Else {
                         Msgbox, One last thing
                         Msgbox, ALT+Q will start the script
                         MsgBox, ALT+W will close the script
-                        FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%, %A_ScriptDir%\Typing-Config.txt
+                        FileAppend, 1`n%UsernameX%`n%UsernameY%`n%typingLessonsX%`n%typingLessonsY%`n%nextArrowX%`n%nextArrowY%`n%backArrowX%`n%backArrowY%`n%typingBoxX%`n%typingBoxY%`n0, %A_ScriptDir%\Typing-Config.cfg
                 IfMsgBox, Cancel 
                         Reload
         }
