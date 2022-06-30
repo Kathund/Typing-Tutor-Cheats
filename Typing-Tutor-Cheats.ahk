@@ -320,6 +320,7 @@ Loop, 1 {
         }
 
 }
+MsgBox, page should be %pageNumber%
 
 Return
 
