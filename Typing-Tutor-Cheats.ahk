@@ -54,8 +54,9 @@ Else if Check = 2
 }
 Else {
         ;setup
+        UrlDownloadToFile, https://github.com/Kathund/Typing-Tutor-Cheats/releases/download/v0.63-beta/Typing-Text.txt, %A_ScriptDir%\Typing-Text.txt
         Msgbox, Currently Running Version %Version%
-        FileDelete, %A_ScriptDir%\Typing-Config.txt
+        FileDelete, %A_ScriptDir%\Typing-Config.cfg
         Msgbox, Welcome to Ur Typing Tutor CHEAT!
         Msgbox, 3, First Time Setup, Do u want to run the First time Setup
         IfMsgBox, Yes
