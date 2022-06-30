@@ -266,10 +266,13 @@ Loop, 1 {
         Sleep, 1750
         MouseClick, left, %typingBoxX%, %typingBoxY%, 1, 0 
         Send, %TextP01%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP02%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP03%
+        pageNumber := pageNumber+1
         Sleep, 1750
         Send, %TextP04% 
         Sleep, 1750
