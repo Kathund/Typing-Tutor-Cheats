@@ -194,6 +194,10 @@ hk(f=0, mouse=0) {
 
 ; Keybinds
 
+!r::
+Reload
+Return
+
 !q::
 Goto, Loop
 Return
